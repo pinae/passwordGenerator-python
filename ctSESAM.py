@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+import string
 from hashlib import pbkdf2_hmac
 
-small_letters = list('abcdefghijklmnopqrstuvwxyz')
-big_letters = list('ABCDEFGHJKLMNPQRTUVWXYZ')
-numbers = list('0123456789')
-special_characters = list('#!"§$%&/()[]{}=-_+*<>;:.')
-password_characters = small_letters + big_letters + numbers + special_characters
+special_characters = '#!"§$%&/()[]{}=-_+*<>;:.'
+password_characters = string.ascii_letters + string.digits + special_characters
 salt = "pepper"
 
 
