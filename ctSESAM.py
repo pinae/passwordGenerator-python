@@ -4,7 +4,7 @@
 from hashlib import pbkdf2_hmac
 
 small_letters = list('abcdefghijklmnopqrstuvwxyz')
-big_letters = list('ABCDEFGHJKLMNPQRTUVWXYZ')
+big_letters = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 numbers = list('0123456789')
 special_characters = list('#!"§$%&/()[]{}=-_+*<>;:.')
 password_characters = small_letters + big_letters + numbers + special_characters
